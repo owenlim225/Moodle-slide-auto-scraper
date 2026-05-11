@@ -42,7 +42,7 @@ print(f"🚀 Starting extraction for {len(urls)} slides...")
 
 for i, url in enumerate(urls, 1):
     try:
-        response = requests.get(url, headers=headers, timeout=10)
+        response = requests.get(url, headers=headers, timeout=30)
         
         if "application/json" not in response.headers.get("Content-Type", ""):
             print(f"❌ Slide {i}: Auth failed. Cookie might be expired.")

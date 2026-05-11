@@ -1,0 +1,342 @@
+SAM_Lesson2 Scraped Content
+==============================
+
+Slide 1
+----------
+Picture 9
+Picture 6
+System Administration and Maintenance
+Lesson 1: Introduction and Basic Host Configuration
+
+Slide 2
+----------
+Content Placeholder 7
+Topics
+What is system administration?
+What do sysadmins do?
+Principles and First Steps
+Organizations and Certifications
+Maturity and Complexity
+Ethics
+Picture 7
+
+Slide 3
+----------
+Users
+run on
+Network
+PCs
+help to accomplish work
+Servers
+Content Placeholder 7
+Picture 7
+Services
+\tSystem: An organized collection of computers interacting with a group of users.
+What is a system?
+
+Slide 4
+----------
+System State
+Picture 7
+Content Placeholder 7
+System policy: specification of a system’s configuration and its acceptable usage.
+System state S(t): the current configuration (files, kernel, memory or CPU usage) of a system.
+Ideal states S*(t): states of the system that match the system policy.  Over time, the system state shifts away from the ideal state.
+System administration: modifying the system to bring it closer to S*(t).
+
+Slide 5
+----------
+Content Placeholder 7
+Picture 7
+What is system Administion?
+System administration is the process of maintaining and managing the overall performance and security of a computer system or network. This includes tasks such as installing and configuring software, monitoring network and system performance, troubleshooting issues, and ensuring the security of data and user access.
+
+Slide 6
+----------
+Screen Shot 2023-01-19 at 3.48.16 PM.png
+The Job of a System Administrator
+Content Placeholder 7
+Picture 7
+no precise job description
+often learned by experience
+“makes things run”
+work behind the scenes
+often known as Operator, Network Administrator, System Programmer, System Manager, Service Engineer, Site Reliability Engineer etc.
+
+Slide 7
+----------
+Content Placeholder 7
+Small org: sysadmin can be entire IT staff
+Phone support
+Order and install software and hardware
+Fix anything that breaks from phones to servers
+Develop software
+Large org: sysadmin is one of many IT staff
+Specialists instead of “jack of all trades”
+Database admin, Network admin, Fileserver admin, Help desk worker, Programmers, Logistics
+What do sysadmins do?
+Picture 7
+
+Slide 8
+----------
+Add and remove users.
+Add and remove hardware.
+Perform backups.
+Install new software systems.
+Troubleshooting.
+System monitoring.
+Auditing security.
+Help users.
+Communicate.
+Content Placeholder 7
+Picture 7
+Common Activities
+
+Slide 9
+----------
+Creating user accounts
+Consistency requires automation
+Startup (dot) files
+Namespace management
+Usernames and UIDs
+Multiple namespaces or SSI?
+Removing user accounts
+Many accounts across different systems
+Picture 7
+Content Placeholder 7
+User Management
+
+Slide 10
+----------
+Content Placeholder 7
+Picture 7
+Adding and removing hardware
+Configuration, cabling, etc.
+Purchase
+Evaluate and purchase servers + other hardware
+Capacity planning
+How many servers?  How much bandwidth, storage?
+Data Center management
+Power, racks, environment (cooling, fire alarm)
+Virtualization
+When can virtual servers be used vs. physical?
+Hardware Management
+
+Slide 11
+----------
+Backups
+Backup strategy and policies
+Scheduling: when and how often?
+Capacity planning
+Location: on-site vs. off-site.
+Monitoring backups
+Checking logs
+Verifying media
+Performing restores when requested
+Content Placeholder 7
+Picture 7
+
+Slide 12
+----------
+Content Placeholder 7
+Automated consistent OS installs
+Desktop vs. server OS image needs.
+Installation of software
+Purchase, find, or build custom software.
+Managing software installations
+Distributing software to multiple hosts.
+Managing multiple versions of a software pkg.
+Patching and updating software
+Software Installation
+Picture 7
+
+Slide 13
+----------
+Picture 7
+Problem identification
+By user notification
+By log files or monitoring programs
+Tracking and visibility
+Ensure users know you’re working on problem
+Provide an ETA if possible
+Finding the root cause of problems
+Provide temporary solution if necessary
+Solve the root problem to permanently eliminate
+Content Placeholder 7
+Troubleshooting
+
+Slide 14
+----------
+Automatically monitor systems for
+Problems (disk full, error logs, security)
+Performance (CPU, mem, disk, network)
+Provides data for capacity planning
+Determine need for resources
+Establish case to bring to management
+Content Placeholder 7
+Picture 7
+System Monitoring
+
+Slide 15
+----------
+Content Placeholder 7
+Request tracking system
+Ensures that you don’t forget problems.
+Ensures users know you’re working on their problem; reduces interruptions, status queries.
+Lets management know what you’ve done.
+User documentation and training
+Policies and procedures
+Schedule and communicate downtimes
+Helping Users
+Picture 7
+
+Slide 16
+----------
+Picture 7
+Customers
+Keep customer appraised of process.
+When you’ve started working on a request.
+When you make progress, need feedback.
+When you’re finished.
+Communicate system status.
+Uptime, scheduled downtimes, failures.
+Meet regularly with customer managers.
+Managers
+Meet regularly with your manager.
+Write weekly status reports.
+Content Placeholder 7
+Communicate
+
+Slide 17
+----------
+Specialized Skills
+Picture 7
+Content Placeholder 7
+Heterogeneous Environments
+Integrating multiple-OSes, hardware types, or network protocols, distributed sites.
+Databases
+SQL RDMS
+Networking
+Complex routing, high speed networks, voice.
+Security
+Firewalls, authentication, NIDS, cryptography.
+Storage
+NAS(network-attached storage), SANs(Storage Area Network), cloud storage.
+Virtualization and Cloud Computing
+VMware, cloud architectures.
+
+Slide 18
+----------
+Qualities of a Successful Sysadmin
+Customer oriented
+Ability to deal with interrupts, time pressure
+Communication skills
+Service provider, not system police
+Technical knowledge
+Hardware, network, and software knowledge
+Debugging and troubleshooting skills
+Time management
+Automate everything possible.
+Ability to prioritize tasks: urgency and importance.
+Content Placeholder 7
+Picture 7
+
+Slide 19
+----------
+Content Placeholder 7
+Picture 7
+Use a request system.
+Customers know what you’re doing.
+You know what you’re doing.
+Manage quick requests right
+Handle emergencies quickly.
+Use request system to avoid interruptions.
+Policies
+How do people get help?
+What is the scope of responsibility for SA team?
+What is our definition of emergency?
+Start every host in a known state.
+First Steps to Better SA
+
+Slide 20
+----------
+Simplicity
+Choose the simplest solution that solves the entire problem.
+Work towards a predictable system.
+Clarity
+Choose a straightforward solution that’s easy to change, maintain, debug, and explain to other SAs.
+Generality
+Choose reusable solutions that scale up; use open protocols.
+Automation
+Use software to replace human effort.
+Communication
+Be sure that you’re solving the right problems and that people know what you’re doing.
+Basics First
+Solve basic infrastructure problems before advanced ones.
+Principles of SA
+Content Placeholder 7
+Picture 7
+
+Slide 21
+----------
+Small
+2-10 computers, 1 OS, 2-20 users.
+Small staff size requires outsourcing to obtain most specialized skills.
+Midsized
+11-100 computers, 1-3 OSes, 21-100 users.
+Large
+100+ computers, multiples OSes, 100+ users
+Outsources to reduce costs, some specializations.
+Picture 7
+Types of Sites
+Content Placeholder 7
+
+Slide 22
+----------
+Content Placeholder 7
+Professionalism
+Personal Integrity
+Privacy
+Laws and Policies
+Communication
+System Integrity
+Education
+Social Responsibility
+SA Code of Ethics
+Picture 7
+http://www.sage.org/ethics/
+
+Slide 23
+----------
+Picture 7
+Content Placeholder 7
+SYSTEM ADMINISTRATOR IN ACTION
+
+Slide 24
+----------
+Picture 7
+Building a Site from Scratch
+Think about the organizational structure you need.
+Check in with management on the business priorities that will drive implementation priorities.
+Plan your namespaces carefully
+Build a rock-solid data center
+Build a rock-solid network designed to grow
+Build services that will scale
+Build a software depot,or at least plan a small directory hierarchy that can grow into a software depot
+Establish your initial core application services:\u2028– Authentication and authorization
+– Desktop life-cycle management
+– Email\u2028– File service, backups\u2028– Network configuration\u2028– Printing\u2028– Remote access
+Content Placeholder 7
+
+Slide 25
+----------
+Picture 7
+Growing a Small Site
+Provide a helpdesk
+Establish checklists for new hires, new desktops/laptops, and new servers
+Consider the benefits of a network operations center (NOC) dedicated to monitoring and coordinating network operations
+Think about your organization and whom you need to hire, and provide service statistics showing open and resolved problems
+Monitor services for both capacity and availability so that you can predict when to scale them.
+Be ready for an influx of new computers, employees, and SAs
+Content Placeholder 7
+

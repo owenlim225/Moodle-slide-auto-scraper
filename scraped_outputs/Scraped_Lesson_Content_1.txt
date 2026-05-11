@@ -1,0 +1,156 @@
+SAM_Lesson2 Scraped Content
+==============================
+
+Slide 1
+----------
+Lesson 2
+Popular Operating System
+
+Slide 2
+----------
+Screen Shot 2021-01-18 at 8.26.09 PM.png
+Debian
+
+Slide 3
+----------
+Debian OS
+is a computer operating system composed of software packages released as free and open source software primarily under the GNU General Public License along with other free software licenses.
+It is distributed with access to repositories containing thousands of software packages ready for installation and use. Debian is known for relatively strict adherence to the philosophies of Unix and free software.
+
+Slide 4
+----------
+Ian Ashley Murdock (April 28, 1973 –  December 28, 2015) was an American software engineer, known for being the founder of the Debian project and Progeny Linux Systems, a commercial Linux company.
+History of Debian
+Screen Shot 2021-01-11 at 1.43.58 PM.png
+
+Slide 5
+----------
+Debian was first announced on August 16, 1993, by Ian Murdock, who initially called the system \"the Debian Linux Release
+The word \"Debian\" was formed as a portmanteau of the first name of his then-girlfriend (later ex-wife) Debra Lynn and his own first name
+Before Debian's release, the Softlanding Linux System (SLS) had been a popular Linux distribution and the basis for Slackware.The perceived poor maintenance and prevalence of bugs in SLS motivated Murdock to launch a new distribution.
+History of Debian
+
+Slide 6
+----------
+2000, the project made major changes to archive and release management, reorganizing software archive processes with new \"package pools\" and creating a testing distribution as an ongoing, relatively stable staging area for the next release. In the same year, developers began holding an annual conference called DebConf with talks and workshops for developers and technical users.
+July 2002, the Project released version 3.0, codenamed woody
+
+Slide 7
+----------
+Debian Architecture
+pasted-image.tiff
+
+Slide 8
+----------
+Debian Features
+X.org 7.3 integration. It used to be setting up your screen in Linux was a real pain-in-the-rump. the program automatically take care of setting up your display resolution.
+Renewed emphasis on security. mprove the distribution's security.
+Debian is now Java friendly. The Linux distribution now includes Sun's OpenJDK; the GNU Java compiler and Java bytecode interpreter; and Classpath, an open-source collection of Java libraries
+Debian makes open-source players and viewers available for some proprietary media formats.
+You can run Debian on anything. And, I mean anything. Sure, if you're a developer you can get Linux to run on any system under the sun
+
+Slide 9
+----------
+Debian Versions
+pasted-image.tiff
+
+Slide 10
+----------
+UBUNTU
+Screen Shot 2021-01-18 at 8.27.51 PM.png
+
+Slide 11
+----------
+is a computer operating system based on the Debian Linux distribution and distributed as free and open source software, using its own desktop environment. It is named after the Southern African philosophy of ubuntu (\"humanity towards others”)
+it is also popular on servers and for cloud computing.
+Ubuntu is sponsored by the UK-based company Canonical Ltd., owned by South African entrepreneur Mark Shuttleworth.
+ubuntu
+
+Slide 12
+----------
+History of Ubuntu
+2004 ­ Mark Shuttleworth ( Owned by South African) First Official Release of Ubuntu – Oct. 2004. Ubuntu 4.10 ( “Sounder”)
+2005 – Ubuntu Developers Ubuntu  5.04  (“Hoary  Hedgehog”).  At  same  time  First  Release  of  Kubuntu for KDE fans. Ubuntu 5.10  (Edubuntu  = Ubuntu & Kubuntu)
+2006 – LTS Release First  “Long  Term  Support”  Release  of  Ubuntu.  They  are  decided  to  provide  with  18  months  of  free  security  &  maintenance.  Ubuntu 6.06 LTS (“Dapper Drake”) in June.  With that they also serve single live cd, in which there was a  formal Server Edition.
+
+Slide 13
+----------
+2008 – Second LTS Version After  One  and  Half  year  they  released  Second  Long  Term  Support version. April 2008, Ubuntu 8.04 LTS Later  that  year,  they  released  with  feature  is  the  Windows  installer for Ubuntu. Oct. 2008, Ubuntu 8.10 (“Wubi”)
+2009 – Ubuntu get Popularism At April 2009 they include the Ubuntu Netbook Remix (UNR)  for small screen Netbook devices. Ubuntu 9.04 Now  we  are  celebrating  the  current  version  of  Ubuntu  with  more additional features released in October 2009. Ubuntu 9.10 (“Karmic Koala”)
+History of Ubuntu
+
+Slide 14
+----------
+Ubuntu Architecture
+pasted-image.tiff
+
+Slide 15
+----------
+Features of Ubuntu
+The desktop version of Ubuntu supports all the normal software on Windows such as Firefox, Chrome, VLC, etc.
+It supports the office suite called LibreOffice.
+Ubuntu has an in-built email software called Thunderbird, which gives the user access to email such as Exchange, Gmail, Hotmail, etc.
+There are a host of free applications for users to view and edit photos.
+There are also applications to manage videos and it also allows the users to share videos.
+It is easy to find content on Ubuntu with the smart searching facility.
+The best feature is, it is a free operating system and is backed by a huge open source community.
+
+Slide 16
+----------
+pasted-image.tiff
+Ubuntu versions
+
+Slide 17
+----------
+Windows Server 2008
+Screen Shot 2021-01-18 at 8.29.15 PM.png
+
+Slide 18
+----------
+Windows Server 2008
+(sometimes abbreviated as \"Win2K8\"[5] or \"W2K8\") is one of Microsoft Windows' server line of operating systems. Released to manufacturing on February 4, 2008, and officially released on February 27, 2008, it is the successor to Windows Server 2003, released nearly five years earlier. A second release, named Windows Server 2008 R2, was released to manufacturing on July 22, 2009. Windows Server 2008 is based on Windows NT 6.x. Like Windows Vista and Windows 7,
+
+Slide 19
+----------
+History of Windows Server 2008
+Beta 1 was released on 27 July 2005,
+Beta 2 was announced and released on 23 May 2006 at WinHEC 2006
+Beta 3 was released publicly on 25 April 2007
+Candidate 0 was released to the general public on 24 September 2007
+Candidate 1 was released to the general public on 5 December 2007.
+Windows Server 2008 was released to manufacturing on 4 February 2008 and officially launched on 27 February 2008.
+
+Slide 20
+----------
+Features of Windows Server 2008
+Server Core is a significantly scaled-back installation where no Windows Explorer shell is installed.
+The Active Directory domain functionality that was retained from Windows Server 2003 was renamed to Active Directory Domain Services (ADDS).
+Failover Clustering. Most server features and roles can be kept running with little to no downtime.
+Disk management and file storage The ability to resize hard disk partitions without stopping the server, even the system partition.
+Hyper-V is hypervisor-based virtualization software, forming a core part of Microsoft's virtualization strategy. It virtualizes servers on an operating system's kernel layer.
+
+Slide 21
+----------
+A command-line interface (CLI) is a means of interaction with a computer program where the user (or client) passes commands in the form of a line of text (a command line). \u2028
+The CLI was the primary means of human interaction with most early operating systems,Talk:Command-line interface#early operating systems (sic) including MS-DOS, CP/M, Unix, and Apple DOS. The interface is usually implemented with a command line shell, which is a program that accepts commands as text input and converts commands to appropriate operating system functions.
+Command-line interface (CLI)
+Screen Shot 2021-01-18 at 8.32.12 PM.png
+
+Slide 22
+----------
+A command prompt (or just prompt) is a sequence of (one or more) characters used in a command-line interface to indicate readiness to accept commands. Its intent is to literally prompt the user to take action. A prompt usually ends with one of the characters $, %, #, :, > and often includes other information, such as the path of the current working directory.
+A command-line argument or parameter is an argument sent to a program being called. In principle a program can take many command-line arguments, the meaning and importance of which depend entirely upon the program.
+A command-line option or simply option (also known as a flag or switch) modifies the operation of a command; the effect is determined by the command's program. Options follow the command name on the command line, separated by spaces. A space before the first option is not always required.
+
+Slide 23
+----------
+Bash (Unix shell)
+Screen Shot 2021-01-18 at 8.55.28 PM.png
+Bash is a command processor, typically run in a text window, allowing the user to type commands which cause actions. Bash can also read commands from a file, called a script. Like all Unix shells, it supports filename wildcarding, piping, here documents, command substitution, variables and control structures for condition-testing and iteration.
+
+Slide 24
+----------
+Windows PowerShell
+Screen Shot 2021-01-18 at 9.02.31 PM.png
+Windows PowerShell is Microsoft's task automation framework, consisting of a command-line shell and associated scripting language built on top of, and integrated with the .NET Framework. PowerShell provides full access to COM and WMI, enabling administrators to perform administrative tasks on both local and remote Windows systems.
+
