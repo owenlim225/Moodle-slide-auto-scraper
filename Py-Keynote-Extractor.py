@@ -2,17 +2,22 @@ import requests
 import json
 import os
 
-# --- PASTE YOUR COOKIE HERE ---
-# Find this line in the script I gave you and paste the value
+# --- CONFIGURATION ---
 SESSION_COOKIE = "MoodleSession=77fad158dd62bca4184d286ad4dd13c3"
+OUTPUT_FOLDER = "scraped_outputs"
+BASE_FILENAME = "Scraped_Lesson_Content"
+# ---------------------
 
-# Create a directory for raw data
-os.makedirs("slides_data", exist_ok=True)
+# Create the output directory if it doesn't exist
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # Load URLs
-with open("urls.txt", "r") as f:
-    # We only want the .json files, and we skip the 'header.json' for the loop
-    urls = [line.strip() for line in f.readlines() if line.strip().endswith(".json") and "header.json" not in line]
+try:
+    with open("urls.txt", "r") as f:
+        urls = [line.strip() for line in f.readlines() if line.strip().endswith(".json") and "header.json" not in line]
+except FileNotFoundError:
+    print("❌ Error: 'urls.txt' not found. Please create it first.")
+    exit()
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
@@ -39,16 +44,14 @@ for i, url in enumerate(urls, 1):
     try:
         response = requests.get(url, headers=headers, timeout=10)
         
-        # If the response isn't JSON, it means we likely got redirected to a login page
         if "application/json" not in response.headers.get("Content-Type", ""):
-            print(f"❌ Slide {i}: Auth failed. Cookie might be expired or copied incorrectly.")
+            print(f"❌ Slide {i}: Auth failed. Cookie might be expired.")
             continue
             
         data = response.json()
         slide_content = extract_strings(data)
         
         if slide_content:
-            # Remove duplicates while keeping order
             unique_content = list(dict.fromkeys(slide_content))
             all_text += f"Slide {i}\n" + "-"*10 + "\n" + "\n".join(unique_content) + "\n\n"
             print(f"✅ Processed Slide {i}")
@@ -58,7 +61,19 @@ for i, url in enumerate(urls, 1):
     except Exception as e:
         print(f"❌ Error on Slide {i}: {e}")
 
-with open("Scraped_Lesson_Content.txt", "w", encoding="utf-8") as f:
+# --- LOGIC TO PREVENT OVERWRITING ---
+filename = f"{BASE_FILENAME}.txt"
+filepath = os.path.join(OUTPUT_FOLDER, filename)
+counter = 1
+
+# If file exists, add a number until we find a name that isn't taken
+while os.path.exists(filepath):
+    filename = f"{BASE_FILENAME}_{counter}.txt"
+    filepath = os.path.join(OUTPUT_FOLDER, filename)
+    counter += 1
+
+# Save the final output
+with open(filepath, "w", encoding="utf-8") as f:
     f.write(all_text)
 
-print("\n🎉 Check 'Scraped_Lesson_Content.txt' for your results!")
+print(f"\n🎉 Done! Results saved to: {filepath}")
