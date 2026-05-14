@@ -1,0 +1,18 @@
+# Secrets and local env (Py-Keynote-Extractor / scrapers)
+.env
+.env.local
+.env.*.local
+
+# Cookie/session files (do not commit)
+cookie.txt
+cookies.txt
+*.cookie
+
+# Python
+__pycache__/
+.venv/
+venv/
+
+# Scraper inputs/outputs (local)
+scraped_outputs/
+urls.txt
