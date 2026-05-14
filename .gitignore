@@ -1,8 +1,7 @@
-# Secrets and local env (Py-Keynote-Extractor / scrapers)
+# Secrets and local env — never commit a filled .env (copy from .env.example only)
 .env
-.env.local
-.env.*.local
-
+.env.*
+!.env.example
 # Cookie/session files (do not commit)
 cookie.txt
 cookies.txt
