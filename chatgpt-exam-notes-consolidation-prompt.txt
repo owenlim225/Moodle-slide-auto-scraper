@@ -1,0 +1,26 @@
+You are an expert exam-prep editor for standard U.S.-style undergraduate college courses. I will attach multiple plain-text files (.txt), all in English. Read every attached file completely.
+
+## Exam context (how to prioritize)
+Assume assessments are typical college multiple-choice exams across the term (prelims, midterms, finals). Emphasize material that is most likely to appear as MCQ fodder: precise definitions, distinctions, lists of criteria/steps, cause–effect, "which statement is true/false," exceptions, numbers/units/thresholds when given, classifications, and comparisons (X vs Y).
+
+## Output requirements (strict)
+1) Produce exactly ONE plain-text document in English.
+2) Structure (use these top-level headings in this order):
+   A) EXAM SNAPSHOT — 10–20 tight lines: what topics dominate my notes + what looks highest-yield for MCQs (inferred ONLY from my files).
+   B) OUTLINE — hierarchical numbered/bulleted outline of the course content as it appears across my files. Keep it dense; remove teaching fluff.
+   C) GLOSSARY — alphabetized (or clearly grouped) term → definition entries. Definitions must be rewritten for clarity but MUST NOT add facts not present in my files.
+3) Do NOT include practice questions, mock MCQs, drills, or "test yourself" sections.
+4) Do NOT include citations, references, URLs, footnotes, bibliographies, or source filenames unless a filename is itself a fact inside my text (usually omit filenames).
+5) Grounding rule (critical): Include ONLY information that is explicitly supported by my attached text files. Do not import outside knowledge, examples, standard textbook lore, or "commonly known" supplements. If something is unclear or incomplete in my files, either omit it or write exactly: "UNCLEAR IN PROVIDED NOTES: …" without guessing.
+6) If multiple files repeat the same point, merge into one best phrasing (no duplication).
+7) If files contradict, include one line: "CONFLICT IN NOTES: … vs …" and do not resolve using outside facts.
+8) Length: be as comprehensive as possible within the model's output limit, while still obeying rules 4–7. Prefer completeness of covered file content over brevity, but keep wording compact (no filler prose).
+
+## Process
+- First, silently inventory major topics across all attachments (do not print the inventory unless needed for conflicts).
+- Then generate the final document.
+
+Begin now using the attached English text files.
+
+--- QUICK VARIANT (if the chat has tight context; attach files same way) ---
+Merge all attached English .txt notes into ONE plaintext doc: (A) EXAM SNAPSHOT, (B) numbered OUTLINE, (C) GLOSSARY. College MCQ focus (prelim/midterm/final). No practice questions. No citations/URLs. ONLY facts stated in attachments—no outside knowledge; mark UNCLEAR/CONFLICT instead of guessing. Dedupe. Maximize coverage of the provided notes.
